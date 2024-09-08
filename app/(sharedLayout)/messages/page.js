@@ -1,8 +1,8 @@
 import dynamic from 'next/dynamic';
 
-// Dynamically import components that might be using document
-const Messages = dynamic(() => import('@/components/Messages'), { ssr: false });
-const ChatHistory = dynamic(() => import('@/components/ChatHistory'), { ssr: false });
+// Update the import paths to match your project structure
+const Messages = dynamic(() => import('../../../components/Messages'), { ssr: false });
+const ChatHistory = dynamic(() => import('../../../components/ChatHistory'), { ssr: false });
 
 export default function MessagesPage() {
   return (
