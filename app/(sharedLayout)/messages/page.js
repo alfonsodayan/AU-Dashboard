@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 const Messages = dynamic(() => import('@/components/Messages'), { ssr: false });
 const ChatHistory = dynamic(() => import('@/components/ChatHistory'), { ssr: false });
 
-function MessagesPage() {
+export default function MessagesPage() {
   return (
     <div>
       <Messages />
@@ -12,5 +12,3 @@ function MessagesPage() {
     </div>
   );
 }
-
-export default MessagesPage;

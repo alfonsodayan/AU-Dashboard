@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 
-function Messages() {
+export default function Messages() {
   useEffect(() => {
-    // Any code that uses document should be here
     if (typeof window !== 'undefined') {
       // Now it's safe to use document
       // For example:
@@ -11,8 +10,9 @@ function Messages() {
   }, []);
 
   return (
-    // Your component JSX
+    <div>
+      {/* Your Messages component JSX */}
+      <h1>Messages</h1>
+    </div>
   );
 }
-
-export default Messages;

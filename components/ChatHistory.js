@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 
-function ChatHistory() {
+export default function ChatHistory() {
   useEffect(() => {
-    // Any code that uses document should be here
     if (typeof window !== 'undefined') {
       // Now it's safe to use document
       // For example:
@@ -12,8 +11,9 @@ function ChatHistory() {
   }, []);
 
   return (
-    // Your component JSX
+    <div>
+      {/* Your ChatHistory component JSX */}
+      <h2>Chat History</h2>
+    </div>
   );
 }
-
-export default ChatHistory;
